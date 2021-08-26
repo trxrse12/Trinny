@@ -79,15 +79,6 @@ export const NavigationDrawer = ({toggleDrawer, open}: NavigationDrawerPropsType
                             <ListItemText
                                 primary='Question Three' secondary='List on the fritz' />
                         </ListItem>
-                        <ListItem button onClick={(e)=>handleButtonClick( 'questionFour')}>
-                            <ListItemAvatar >
-                                <Avatar>
-                                    3
-                                </Avatar>
-                            </ListItemAvatar>
-                            <ListItemText
-                                primary='Question Four' secondary='Kobayashi Maru' />
-                        </ListItem>
                     </List>
                 </div>
             </Drawer>
