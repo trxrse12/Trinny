@@ -1,15 +1,10 @@
 
 <
 .example.env,0/9/090685e987990f79f7298e8c34ffc6b164db048b
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 O
 src/components/Header/styles.ts,e/f/ef8137bf1de7fbe1d2f9083eddee9a2c6ea2e0a3
 N
 src/components/Header/index.ts,a/2/a2f4d68302da7a16d7d5c4619556980111b2ea4b
-4
-.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 X
 (src/components/NavigationDrawer/index.ts,d/2/d252232f63afbff3c418953cdee3acceaabb65f0
 d
