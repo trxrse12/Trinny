@@ -11,8 +11,6 @@ d
 4src/components/NavigationDrawer/NavigationDrawer.tsx,6/9/69225573040697c12b2da3523b0ca8a632c1df1c
 P
  src/components/Header/Header.tsx,5/9/593609f6a3ce8accf706e0d6904ba33a1c98ec6c
-O
-src/pages/QuestionTwo/styles.ts,1/3/13e1792a9eeb0ec952a000d63fe9fd489efa834e
 7
 db.json,8/8/882a43610b9835dd51ca4ad37a0967fa0205e328
 L

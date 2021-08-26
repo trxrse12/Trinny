@@ -5,7 +5,7 @@ export const Home = () =>{
     return (
         <div style={{padding: 24, textAlign: 'left'}}>
             <Typography variant="h4" gutterBottom style={{textAlign: 'center'}}>
-                Welcome to the  Front End Test Suite
+                Welcome to the {process.env.REACT_APP_COMPANY}: Front End Test Suite
             </Typography>
             <Typography variant="body1" gutterBottom>
                 There are a number of tasks for you to try and solve, each one presents itself as a bug that needs fixing.
