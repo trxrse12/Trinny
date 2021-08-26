@@ -17,8 +17,6 @@ G
 src/pages/Home/index.ts,e/4/e4c40e20acf3bb7953f6b9ca0dba3d3485a657df
 O
 src/pages/QuestionOne/index.tsx,d/9/d9fc9e2e89a78eeeb66143ae6759e5be6aecb57c
-T
-$src/pages/QuestionOne/ProblemOne.tsx,f/0/f0789a622978e0196300001bf8d94197489054bb
 O
 src/pages/QuestionTwo/index.tsx,5/d/5defbefff76a99912b5065f99de09692e150e729
 U

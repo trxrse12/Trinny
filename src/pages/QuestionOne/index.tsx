@@ -1,7 +1,4 @@
-import {QuestionOne} from "./QuestionOne";
-import {ProblemOne} from "./ProblemOne";
+import { QuestionOne } from "./QuestionOne";
+import { ProblemOne } from "./ProblemOne";
 
-export {
-    QuestionOne,
-    ProblemOne
-}
+export { QuestionOne, ProblemOne };
