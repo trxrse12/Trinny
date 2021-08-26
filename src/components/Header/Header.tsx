@@ -29,7 +29,7 @@ export const Header = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            {process.env.REACT_APP_COMPANY}
+            {process?.env?.REACT_APP_COMPANY || ''}
           </Typography>
         </Toolbar>
       </AppBar>
