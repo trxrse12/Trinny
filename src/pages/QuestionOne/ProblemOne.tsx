@@ -17,7 +17,7 @@ export class ProblemOne extends Component<any, any> {
     };
     return (
       <div style={{ marginTop: 48 }}>
-        <Button variant="contained" onClick={handleOnClick()}>
+        <Button variant="contained" onClick={handleOnClick}>
           {this.state.label} {this.state.counter} times
         </Button>
       </div>
