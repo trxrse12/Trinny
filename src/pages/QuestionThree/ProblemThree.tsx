@@ -32,7 +32,7 @@ const createMockData = () => {
       Icon: Pets,
       description: "Likes long walks and getting to know the inner you",
     }),
-    // createRowData({ species: null, name: null, Icon: null, description: null }),
+    createRowData({ species: null, name: null, Icon: null, description: null }),
   ];
 };
 
@@ -55,7 +55,6 @@ class ProblemThree extends Component {
   render() {
     const { classes }: any = this.props;
     const mockData = createMockData();
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXx mockData=', mockData)
     return (
       <div className={classes.container}>
         <Paper>
