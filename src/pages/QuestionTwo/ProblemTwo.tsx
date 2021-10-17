@@ -10,7 +10,18 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import { getCardDetails } from "./api";
 import styles from "./styles";
 
-class ProblemTwo extends Component<any, any> {
+interface IProps {
+  classes: any
+}
+
+interface IState {
+  title: any;
+  imgSrc: any  ; 
+  body: any;
+  loading: boolean;
+}
+
+class ProblemTwo extends Component<IProps, IState> {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -21,16 +32,17 @@ class ProblemTwo extends Component<any, any> {
     };
     try {
       // @ts-ignore
-      getCardDetails.then((data) => {
+      getCardDetails().then((data) => {
         if (!data) {
           throw new Error("No Data");
         }
-        this.setState({
+        this.setState(state => ({
+          ...state,
           title: data.title,
           imgSrc: data.imgSrc,
           body: data.body,
           loading: false,
-        });
+        }));
       });
     } catch (e) {
       throw e;
@@ -38,6 +50,7 @@ class ProblemTwo extends Component<any, any> {
   }
   render() {
     const { classes } = this.props;
+    // console.log('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC classes=', classes)
     const { title, imgSrc, body, loading } = this.state;
     if (loading) {
       return (
