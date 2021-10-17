@@ -14,7 +14,7 @@ const defaultMock: any = {
 };
 
 const createRowData = ({ name, species, Icon, description }: any) => {
-  let rowData = defaultMock;
+  let rowData = {...defaultMock}; // this is dodgy 
   rowData.id = uuidv4();
   rowData.name = name ? name : rowData.name;
   rowData.species = species ? species : rowData.species;

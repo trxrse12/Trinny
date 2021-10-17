@@ -32,7 +32,7 @@ const createMockData = () => {
       Icon: Pets,
       description: "Likes long walks and getting to know the inner you",
     }),
-    createRowData({ species: null, name: null, Icon: null, description: null }),
+    // createRowData({ species: null, name: null, Icon: null, description: null }),
   ];
 };
 
@@ -55,6 +55,7 @@ class ProblemThree extends Component {
   render() {
     const { classes }: any = this.props;
     const mockData = createMockData();
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXx mockData=', mockData)
     return (
       <div className={classes.container}>
         <Paper>
@@ -62,9 +63,13 @@ class ProblemThree extends Component {
             {mockData.map((item, i) => {
               return (
                 <QuestionListItem
-                  item={item}
-                  key={item.id}
+                  icon={item.icon}
+                  itemName={item.name}
+                  species={item.species}
+                  id={item.id}
+                  // key={i}
                   divider={i !== mockData.length - 1}
+                  description={item.description}
                 />
               );
             })}

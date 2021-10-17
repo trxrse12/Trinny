@@ -50,7 +50,6 @@ class ProblemTwo extends Component<IProps, IState> {
   }
   render() {
     const { classes } = this.props;
-    // console.log('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC classes=', classes)
     const { title, imgSrc, body, loading } = this.state;
     if (loading) {
       return (

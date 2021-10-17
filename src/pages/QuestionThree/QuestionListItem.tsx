@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment} from "react";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
 
 export const QuestionListItem = ({
   icon,
-  name,
+  itemName,
   species,
   id,
   divider,
@@ -37,7 +37,7 @@ export const QuestionListItem = ({
           </Avatar>
         </ListItemAvatar>
         <ListItemText
-          primary={`${name}: ${species ? species : "Other"}`}
+          primary={ `${itemName}: ${species ? species : "Other"}`}  
           secondary={
             <React.Fragment>
               <div>
@@ -58,7 +58,7 @@ export const QuestionListItem = ({
               </div>
             </React.Fragment>
           }
-        />
+         />
       </ListItem>
       {divider && <Divider variant="middle" />}
     </Fragment>
