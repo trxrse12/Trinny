@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 
-export class ProblemOne extends Component<any, any> {
+interface IProps {
+}
+
+interface IState {
+  label: string;
+  counter: number;
+}
+
+export class ProblemOne extends Component<IProps, IState> {
   constructor(props: any) {
     super(props);
     this.state = {
